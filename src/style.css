@@ -1,0 +1,250 @@
+* {
+    padding:0;
+    margin: 0;
+
+    font-family: cursive;
+}
+
+:root {
+    --bgMain: 	rgba(17,29,74,.95);
+    --bgSecondary: rgba(255,207,153,1.0);
+    --borderSecondary: rgba(255,237,153,1);
+    --textLight: rgba(255,247,240,1.0);
+    --textDark: rgba(30,30,36,1.0);
+    --accents: rgba(244,91,105,1.0);
+}
+
+body {
+    background-color: var(--bgMain);
+}
+
+.headerContainer {
+    display: grid;
+    grid-area: 1/1/2/-1;
+    place-content: center;
+
+    font-family: cursive;
+}
+
+.header {
+    font-size: 11vmin;
+    color: var(--textLight);
+    padding: 16px;
+}
+
+.pageContainer {
+    display:grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: min(5vmax,1fr) 7fr max(45px,3vmax);
+}
+
+.sideContainer {
+    display: grid;
+    grid-area: 2/1/3/2;
+}
+
+.sidebar {
+    display: flex;
+    gap:12px;
+    flex-direction: column;
+
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    
+    font-size: 1.3vmax;
+    font-family: cursive;
+
+    background-color: var(--accents);
+    border: 1px solid var(--borderSecondary);
+    padding: 3px;
+
+    height: 3vmax;
+    width: 80%;
+}
+
+li.active {
+    border: 3px solid var(--borderSecondary);
+    width: 87%;
+}
+
+.bodyContainer {
+    grid-area: 2/2/3/3;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    
+    background-color: var(--bgSecondary);
+    height: 100%;
+}
+
+.bodyHeader {
+    grid-column: 1 / -1;
+    align-self: center;
+
+    font-size: 9vmin;
+    text-align: center;
+    text-decoration: underline var(--textDark);
+    padding: 12px;
+}
+
+.bodyContent {
+    padding: 2vmin 15%;
+    text-align: center;
+}
+
+.bodyContainer .about{
+    background-color: #ffebd3;
+    margin: 10px;
+}
+
+.aboutText {
+    font-size: 4vmin;
+    background-color: var(--textLight);
+    margin: 12px;
+    padding: 5% 15%;
+}
+
+.aboutPicture {
+    border: 5px solid var(--accents);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    content: url('/src/outdoor\ dining.jpg');
+    object-fit: cover;
+    height: 50vmin;
+    width: 95%;
+}
+
+.bodyContent.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ffebd3;
+    margin:10px;
+    padding: 2vmin 5%;
+}
+
+.menuDisplay {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.itemName {
+    font-size: 3.5vmin;
+}
+
+.itemDescription {
+    font-size: 2vmin;
+    font-family: Verdana;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menuContainer {
+    display: grid;
+    gap:8px;
+    grid-auto-rows: 1fr;
+
+    padding: 0 8px;
+}
+
+.menu img{
+    height: 13vmax;
+}
+
+.pictureContainer {
+    place-self: center;
+    background-color: var(--textLight);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.salmonContainer {
+    grid-row: 2;
+}
+
+.salmon {
+    content: url('/src/salmon\ green\ sauce.jpg');
+
+}
+
+.veal {
+    content: url('/src/calf\ with\ beans.jpg');
+}
+
+.cupcakeContainer {
+    grid-row: 3;
+}
+
+.cupcake {
+    content: url('/src/cupcake.jpg');
+}
+
+.footerContainer {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-area: 3/1/4/-1;
+
+    background-color: var(--textLight);
+    place-content: center;
+}
+
+.bodyContainer .contact{
+    display:grid;
+    gap:8px;
+
+    background-color: #ffebd3;
+    margin: 10px;
+    padding: 2vmin 25%;
+}
+
+.locationHeader {
+    font-size: 5vmin;
+}
+
+.locationContainer {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.locationDescription {
+    font-size: 3vmin;
+}
+
+.numberInfo {
+    font-family: Verdana;
+    font-size: 2vmin;
+}
+
+.mapContainer {
+    height: 35vmin;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    font-family: Arial;
+    justify-self: center;
+}
+
+.githubUrl {
+    content: url('/src/github.png');
+    object-fit: cover;
+    height: 100%;
+}
+
+.flaticon {
+    color:black;
+    text-decoration: none;
+}
