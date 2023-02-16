@@ -27,3 +27,7 @@ Image by <a href="https://pixabay.com/users/em80-846530/">EM80</a> from <a href=
 Cupcake Photo: https://pixabay.com/photos/food-wedding-desert-cake-party-2055736/
 
 Image by <a href="https://pixabay.com/users/goumbik-3752482/">Lukas</a> from <a href="https://pixabay.com/">Pixabay</a>
+
+Background Photo: https://pixabay.com/illustrations/bar-restaurant-bavaria-beer-club-826687/
+
+Image by <a href="https://pixabay.com/users/newhouse-1160730/">chien than</a> from <a href="https://pixabay.com/">Pixabay</a>

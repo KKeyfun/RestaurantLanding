@@ -73,24 +73,38 @@ li.active {
 
 .bodyContainer {
     grid-area: 2/2/3/3;
+
+    background-image: url('/src/bar.jpg');
+    background-repeat: no-repeat;
 }
 
 .mainContent {
     display: grid;
     grid-template-rows: 1fr 10fr;
     
-    background-color: var(--bgSecondary);
     height: 100%;
 }
 
-.bodyHeader {
+.bodyHeaderContainer {
     grid-column: 1 / -1;
-    align-self: center;
+    /* above might change */
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    padding: 12px;
+}
+
+.bodyHeader {
+    display:inline-block;
+    border-bottom: 2px solid black;
+    padding: 0 3%;
 
     font-size: 9vmin;
-    text-align: center;
-    text-decoration: underline var(--textDark);
-    padding: 12px;
+    transition: padding 1s ease;
+}
+
+.bodyHeader:hover {
+    padding: 0 15%;
+    /* transition-timing-function: ease; */
 }
 
 .bodyContent {
@@ -99,7 +113,6 @@ li.active {
 }
 
 .bodyContainer .about{
-    background-color: #ffebd3;
     margin: 10px;
 }
 
@@ -124,7 +137,7 @@ li.active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #ffebd3;
-    margin:10px;
+    margin:20px;
     padding: 2vmin 5%;
 }
 
@@ -201,8 +214,8 @@ li.active {
     gap:8px;
 
     background-color: #ffebd3;
-    margin: 10px;
-    padding: 2vmin 25%;
+    margin: 20px 7%;
+    padding: 0 25%;
 }
 
 .locationHeader {
@@ -225,7 +238,7 @@ li.active {
 }
 
 .mapContainer {
-    height: 35vmin;
+    height: 38vmin;
 }
 
 .map {

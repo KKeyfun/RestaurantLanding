@@ -4,6 +4,7 @@ import { append } from "../functions/appendElement";
 export { loadContact };
 
 function loadContact(body){
+    let bodyHeaderContainer = makeElem('div','bodyHeaderContainer');
     let bodyHeader = makeElem('div','bodyHeader','Contact Us');
     let bodyContent = makeElem('div',['bodyContent','contact']);
 
@@ -36,6 +37,7 @@ function loadContact(body){
     let phoneTwo = makeElem('div','numberInfo','Phone Number: (234)-567-8901');
 
     append(containerTwo,[locationTwo,mapContainerTwo,descriptionTwo,addressTwo,phoneTwo,hoursTwo]);
+    append(bodyHeaderContainer,bodyHeader);
     append(bodyContent,[containerOne,containerTwo]);
-    append(body,[bodyHeader,bodyContent]);
+    append(body,[bodyHeaderContainer,bodyContent]);
 }

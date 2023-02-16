@@ -4,6 +4,7 @@ import { append } from "../functions/appendElement";
 export { loadMenu };
 
 function loadMenu(body){
+    let bodyHeaderContainer = makeElem('div','bodyHeaderContainer');
     let bodyHeader = makeElem('div','bodyHeader','Menu');
     let bodyContent = makeElem('div',['bodyContent','menu']);
 
@@ -40,8 +41,9 @@ function loadMenu(body){
     append(leftColumn,[vealContainer,cupcakeContainer]);
     append(menu,menuItems);
     append(rightColumn,salmonContainer);
+    append(bodyHeaderContainer,bodyHeader);
     append(bodyContent,[leftColumn,menu,rightColumn]);
-    append(body,[bodyHeader,bodyContent]);
+    append(body,[bodyHeaderContainer,bodyContent]);
 }
 
 
