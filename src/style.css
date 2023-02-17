@@ -10,7 +10,6 @@
     --bgSecondary: rgba(255,207,153,1.0);
     --borderSecondary: rgba(255,237,153,1);
     --textLight: rgba(255,247,240,1.0);
-    --textDark: rgba(30,30,36,1.0);
     --accents: rgba(244,91,105,1.0);
 }
 
@@ -219,13 +218,14 @@ li.active {
 }
 
 .locationHeader {
-    font-size: 5vmin;
+    font-size: 4vmin;
 }
 
 .locationContainer {
     display: flex;
     flex-direction: column;
     gap:16px;
+    padding: 5% 0;
 }
 
 .locationDescription {
