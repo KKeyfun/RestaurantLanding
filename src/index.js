@@ -1,8 +1,6 @@
 import { initialLoad } from './initialLoad';
 import './style.css';
 
-export { current };
-var current = '';
 initialLoad();
 
 //https://pixabay.com/photos/table-glassware-cutlery-silverware-5356682/
