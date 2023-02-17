@@ -12,8 +12,8 @@ function loadContact(body){
     let locationOne = makeElem('div','locationHeader','The Food Restaurant Main Street');
 
     let mapContainerOne = makeElem('div','mapContainer');
-    let mapOne = makeElem('iframe','map');
-    mapOne.src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Granville%20St,%20Farm%20Rd,%20Sheffield%20S2%202TP,%20United%20Kingdom+(%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed";
+    let mapOne = makeElem('img',['map','main']);
+
     append(mapContainerOne,mapOne);
 
     let descriptionOne = makeElem('div','locationDescription','Our original location where we invented food');
@@ -27,8 +27,7 @@ function loadContact(body){
     let locationTwo = makeElem('div','locationHeader','The Food Restaurant : The Sequel');
 
     let mapContainerTwo = makeElem('div','mapContainer');
-    let mapTwo = makeElem('iframe','map');
-    mapTwo.src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=76/78%20Queensway,%20London%20W2%203RL,%20United%20Kingdom+(%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed";
+    let mapTwo = makeElem('img',['map','street']);
     append(mapContainerTwo,mapTwo);
 
     let descriptionTwo = makeElem('div','locationDescription','In our quest to conquer the food world, we opened a second location');

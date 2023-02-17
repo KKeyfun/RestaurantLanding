@@ -254,6 +254,15 @@ li.active {
 .map {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+}
+
+.map.main {
+    content: url('./main\ st.png');
+}
+
+.map.street {
+    content: url('./street\ st.png');
 }
 
 .footer {
