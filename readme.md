@@ -1,5 +1,7 @@
 # Restaurant
 A simple restaurant page
+
+Check it out here: https://kkeyfun.github.io/RestaurantLanding/
 <br>
 ### Built Using
 ---
