@@ -37,7 +37,7 @@ function initialLoad(){
     url.href = 'https://www.flaticon.com/free-icons/github';
     let image = makeElem('img','githubUrl');
     let footer = makeElem('a','footer');
-    footer.href = 'https:github.com/KKeyfun';
+    footer.href = 'https://www.github.com/KKeyfun';
     append(footer,image);
     append(footerContainer,[footer,url]);
     
